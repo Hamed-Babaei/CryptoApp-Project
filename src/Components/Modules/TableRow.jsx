@@ -2,11 +2,14 @@ import React from "react";
 import chartUp from "../../assets/chart-up.svg";
 import chartDown from "../../assets/chart-down.svg";
 
-export default function TableRow({ coin }) {
+export default function TableRow({ coin, setChart }) {
+  const showHandler = () => {
+    setChart(true);
+  };
   return (
     <tr key={coin.id}>
       <td>
-        <div className="symbols">
+        <div className="symbols" onClick={showHandler}>
           <img src={coin.image} alt="Coin img" />
           <span>{coin.symbol.toUpperCase()}</span>
         </div>
