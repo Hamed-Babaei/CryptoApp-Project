@@ -1,7 +1,6 @@
-.loading {
-    position: absolute !important;
-    /* top: 50% !important; */
-    bottom: 50px;
+.container svg {
+    position: absolute;
+    top: 50%;
 }
 .container {
     display: flex;
